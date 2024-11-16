@@ -1,62 +1,63 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #78B3CE;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #78b3ce;
 }
 
 #navbar {
-    background-color: #78B3CE;
-    color: white;
+  background-color: #78b3ce;
+  color: white;
 }
 
-.navbar-brand, .nav-link {
-    color: white;
+.navbar-brand,
+.nav-link {
+  color: white;
 }
 
 .nav-item {
-    background-color: #FF6500;
-    border: 1px solid white;
-    border-radius: 10px;
+  background-color: #ff6500;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
 .card-container {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .card-container .card {
-    background-color: #DFF2EB;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #dff2eb;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .instructions ul {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 .feedback {
-    font-weight: bold;
-    font-size: 1.2em;
-    color: #28a745;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #28a745;
 }
 
 .error {
-    font-size: 1em;
-    color: #dc3545;
+  font-size: 1em;
+  color: #dc3545;
 }
 
 .container {
-    max-width: 900px;
-    margin: auto;
-    padding: 20px;
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
 }
 
 @media (min-width: 768px) {
-    .card-container {
-        flex-direction: row;
-    }
-    .card {
-        width: 100%;
-    }
+  .card-container {
+    flex-direction: row;
+  }
+  .card {
+    width: 100%;
+  }
 }

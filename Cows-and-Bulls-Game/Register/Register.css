@@ -3,22 +3,22 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: "Mukta", sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
 .header {
   display: flex;
   align-items: center;
-  margin-bottom: 2em; 
-  background-color:white;
+  margin-bottom: 2em;
+  background-color: white;
 }
 
 .header h1 {
-  margin-right: 0.3em; 
+  margin-right: 0.3em;
   margin-left: 1.4em;
   color: black;
   font-weight: bold;
-  font-family: "Mukta", sans-serif; 
+  font-family: "Mukta", sans-serif;
 }
 
 .header .logo {
@@ -27,7 +27,7 @@ body {
 }
 
 .register-form {
-  background-color: #78B3CE;
+  background-color: #78b3ce;
   padding: 30px;
   border-radius: 8px;
   width: 100%;
@@ -48,12 +48,6 @@ body {
 .btn-register {
   width: 30%;
   border-radius: 10px;
-}
-
-h2 {
-  font-family: "Mukta", sans-serif;
-  color: #006769; 
-  margin-bottom: 1em; 
 }
 
 .login-link {

@@ -144,10 +144,19 @@ async function loadScores(userId) {
 
 function resetGame() {
   if (isGameWon) {
-    console.log("Game already won, not resetting.");
+    document.getElementById("targetNumberDisplay").textContent = ``;
+    targetNumber = generateNumber();
+    guesses = [];
+    document.getElementById("guessInput").value = "";
+    document.getElementById("feedback").textContent = "";
+    document.getElementById("error").textContent = "";
+    document.getElementById("guessList").innerHTML = "";
+    const guessButton = document.getElementById("guessButton");
+    if (guessButton) {
+      guessButton.style.display = "inline-block";
+    }
     return;
   }
-
   const user = JSON.parse(localStorage.getItem("user"));
   if (user && user.userid && guesses.length > 0) {
     const score = {
