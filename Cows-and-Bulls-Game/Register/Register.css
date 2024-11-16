@@ -1,0 +1,70 @@
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Mukta", sans-serif;
+  margin: 0;
+}
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2em; 
+  background-color:white;
+}
+
+.header h1 {
+  margin-right: 0.3em; 
+  margin-left: 1.4em;
+  color: black;
+  font-weight: bold;
+  font-family: "Mukta", sans-serif; 
+}
+
+.header .logo {
+  width: 11em;
+  height: auto;
+}
+
+.register-form {
+  background-color: #78B3CE;
+  padding: 30px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 4.5em;
+  font-family: "Mukta", sans-serif;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: 600;
+}
+
+.btn-register {
+  width: 30%;
+  border-radius: 10px;
+}
+
+h2 {
+  font-family: "Mukta", sans-serif;
+  color: #006769; 
+  margin-bottom: 1em; 
+}
+
+.login-link {
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  display: inline;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.login-link:hover {
+  text-decoration: none;
+}

@@ -1,0 +1,72 @@
+
+  body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Mukta", sans-serif;
+    margin: 0;
+  }
+  
+  .header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin-left: 2.5em;
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+  }
+  .header .logo {
+    width: 11em; 
+    height: auto; 
+    margin-bottom: 1em;
+  }
+  .login-form {
+    background-color: #78B3CE;
+    padding: 30px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 400px;
+    margin: auto; 
+    position: relative; 
+    font-family: "Mukta", sans-serif;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    font-weight: 600;
+  }
+  
+  .btn-login {
+    position: fixed;
+    width: 7em;
+  }
+  
+  h1 {
+    
+    font-family: "Mukta", sans-serif;
+  }
+  .forgot-password-link {
+    text-decoration: none;
+    color: black;
+    margin-left: 0.3em;
+    cursor: pointer;
+  }
+  .forgot-password-link:hover {
+    color: grey;
+  }
+  .register-link {
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+  }
+  .register-link:hover {
+    color: gray;
+  }
