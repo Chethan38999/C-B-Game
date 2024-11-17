@@ -52,12 +52,9 @@ async function submitGuess() {
   const { cows, bulls } = calculateCowsAndBulls(guess);
   guesses.push({ guess, cows, bulls });
 
-  guessList.innerHTML = guesses
-    .map(
-      ({ guess, cows, bulls }) =>
-        `<li class="list-group-item">Guessed Number: ${guess} <br> Cows: ${cows}, Bulls: ${bulls}</li>`
-    )
-    .join("");
+  guessList.innerHTML =
+    `<li class="list-group-item">Guessed Number: ${guess} <br> Cows: ${cows}, Bulls: ${bulls}</li>` +
+    guessList.innerHTML;
 
   if (bulls === 4) {
     feedbackDiv.textContent = "Congratulations! You've guessed the number!";
@@ -189,6 +186,10 @@ function showAnswer() {
   document.getElementById(
     "targetNumberDisplay"
   ).textContent = `Correct Number: ${targetNumber}`;
+  const guessButton = document.getElementById("guessButton");
+  if (guessButton) {
+    guessButton.style.display = "none";
+  }
 }
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -202,5 +203,15 @@ document.addEventListener("DOMContentLoaded", function () {
     guessButton.addEventListener("click", submitGuess);
   } else {
     console.error("Guess button not found!");
+  }
+
+  const logoutLink = document.getElementById("logout-link");
+  if (logoutLink) {
+    logoutLink.addEventListener("click", function () {
+      localStorage.removeItem("user");
+      window.location.href = "./Login/Login.html";
+    });
+  } else {
+    console.error("Logout link not found!");
   }
 });
